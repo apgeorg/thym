@@ -10,7 +10,7 @@ setuptools.setup(
     version=thym.__version__,
     author="Apostolos Georgiadis",
     author_email="apostolos.georgiadis@nfiniity.com",
-    description="Python-based timer component for developers",
+    description="A simple timer component that allows you to trigger an event at a specified interval.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/apgeorg/thym.git",
