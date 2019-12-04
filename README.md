@@ -25,6 +25,9 @@ sudo python setup.py install
 ```
 ## Getting started
 ### Timer
+The Timer is able to trigger a callback either periodically or as a one shot by setting the `oneshot` argument correspondingly. 
+There is an `elapsed` property that returns the elapsed time since `start()` was called. 
+Further, a `remaining` property is also available that returns the remaining time of the specified interval.  
 ```python
 import thym
 
@@ -38,12 +41,16 @@ t = thym.Timer(1, timer_timeout, oneshot=False)
 # Start running
 t.start()
 ```
-
-You can now stop the timer:
-
+The Timer can be stopped anytime by calling `stop()` as shown below. Accordingly, the elapsed time and remaining time are calculated. 
 ```python
 t.stop()
 ```
+
+## Licence
+
+Thym is licensed under MIT. See [LICENSE](./LICENSE) file for details.
+
+Copyright © 2019 Apostolos Georgiadis.
 
 
 
