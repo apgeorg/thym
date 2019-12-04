@@ -1,5 +1,5 @@
 import unittest
-from thyme.thyme.timer import Timer
+from thym.thym.timer import Timer
 
 class TestTimer(unittest.TestCase):
 

@@ -1,38 +1,39 @@
-# thyme [![PyPI version](https://badge.fury.io/py/thyme.svg)](https://badge.fury.io/py/thyme)
-TODO
+# thym [![PyPI version](https://badge.fury.io/py/thym.svg)](https://badge.fury.io/py/thym)
+
+A simple timer component that allows you to trigger an event at a specified interval.
 
 ## Installation
-### There are two ways to install thyme:
+### There are two ways to install thym:
 
-Install thyme from PyPI (recommended):
+Install thym from PyPI (recommended):
 ```
-sudo pip install thyme
+sudo pip install thym
 ```
 If you are using a virtualenv, you may want to avoid using sudo:
 ```
-pip install thyme
+pip install thym
 ```
-### Alternatively: install thyme from the GitHub source:
-First, clone thyme using `git`:
+### Alternatively: install thym from the GitHub source:
+First, clone thym using `git`:
 ```
-git clone https://github.com/apgeorg/thyme.git
+git clone https://github.com/apgeorg/thym.git
 ```
-Then, cd to the thyme folder and run the install command:
+Then, cd to the thym folder and run the install command:
 ```
-cd thyme
+cd thym
 sudo python setup.py install
 ```
 ## Getting started
 ### Timer
 ```python
-import thyme
+import thym
 
 # Timer callback function
 def timer_timeout():
   print("Hello!")
 
 # Create a Timer which runs periodically 
-t = thyme.Timer(1, timer_timeout, oneshot=False)
+t = thym.Timer(1, timer_timeout, oneshot=False)
 
 # Start running
 t.start()
